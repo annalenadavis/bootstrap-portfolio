@@ -65,17 +65,24 @@
 
         <div class="col-md-4">
           <h4 class="my-3" style="color: #8ca4d4">Restaurant Reviews App</h4>
-          <p>This project for Udacity's Mobile Web Specialist Nanodegree had to pass a code review at each of it's three stages. 
-              For stage 1 I refactored the existing starter code making the app responsive, accessible, 
-              and available offline using a service worker. For Stage 2 I refactored again to access server data instead of local memory,
-              used IndexedDB to cache the restaurant data, and took steps to increase performance. And in Stage 3 I will add a form so users 
-              can submit reviews, and optimize the site to meet stricter performance benchmarks.
+          <p>This project, for Udacity's Mobile Web Specialist Nanodegree, had to pass code review at each of it's three stages. I refactored existing code 
+            to make the app responsive, accessible, performant, and available offline. This was a JavaScript-heavy project.  I gained experience 
+            working with someone else's code and refactoring to improve performance and add new features to the application. I also wrote a lot from 
+            scratch, which helped improve my JavaScript and error handling skills.
           </p>
+          <ul>
+            <li>Stage 1: Made app responsive, accessible, available offline with service worker</li>
+            <li>Stage 2: Used fetch API to access server data, used indexedDB to cache restaurant data</li>
+            <li>Stage 3: Added a working form, ability to mark restaurants as favorites, took steps to raise lighthouse scores above 90</li>
+          </ul>
+
           <h4 class="my-3" style="color: #8ca4d4">Project Details</h4>
           <ul>
+            <li>Progressive Web Application</li>
+            <li>Lighthouse Performance Scores above 90</li>
+            <li>Offline-first code: with Service Worker and IndexedDB</li>
             <li>Responsive design</li>
             <li>Accessible code</li>
-            <li>Utilized a Service Worker and IndexedDB</li>
             <li>HTML5, CSS3, Flexbox</li>
             <li>JavaScript and Grunt</li>
           </ul>
@@ -112,7 +119,7 @@
           <h4>Responsive Design</h4>
         <p>I made all content display on a range of media sizes utilizing available screen
             real estate.  I also used responsive images sized appropriately depending on what viewport size the
-            app is opened in.
+            app is opened in. Below is a sample of some of the changes I made.
         </p>
       </div>
 
@@ -158,8 +165,8 @@
 
                   <div class="row mt-5 mb-3 mx-5 px-5" style="text-align: center">
                         <h4>Fetching Data & Offline Availability</h4>
-                      <p>I refactored existing code to fetch data from the server, added a service worker to cache site assets
-                        and opened an IndexedDB in the browser to store the restaurant data, so that visited pages are rendered when
+                      <p>I refactored existing code to fetch data from the server, add form data to the server, activate a service worker to cache site assets
+                        and open an IndexedDB in the browser to store the restaurant and review data, so that visited pages are rendered when
                         there is no network access. 
                       </p>
                     </div>
@@ -168,6 +175,16 @@
                           <img class="img-fluid" src="img/reviewsapp/fetchWithIdb.jpg" alt="">
                         </a>
                       </div>
+                      <div class="row justify-content-md-center mb-4">
+                          <a href="#">
+                            <img class="img-fluid" src="img/reviewsapp/fetch-reviews.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="row justify-content-md-center mb-4">
+                            <a href="#">
+                              <img class="img-fluid" src="img/reviewsapp/form-submit.jpg" alt="">
+                            </a>
+                          </div>
                       <div class="row justify-content-md-center mb-4">
                         <a href="#">
                           <img class="img-fluid" src="img/reviewsapp/serviceworker-register.jpg" alt="">
@@ -179,13 +196,31 @@
                         </a>
                       </div>
 
-                      <div class="row justify-content-md-center">
-                            <a href="#">
-                              <img class="img-fluid" src="img/reviewsapp/reviewsample.jpg" alt="">
-                            </a>
-                          </div>
+                      
+                      <div class="row mt-5 mb-3 mx-5 px-5" style="text-align: center">
+                          <h4>New Features and Performance</h4>
+                          <p>Along with a review form, I added the option for users to save restaurants as favorites, and saved that data to local storage. 
+                            I also made changes to improve performance, the biggest being lazy loading photos using intersection observer
+                            and adding a static map on page load that switches to an interactive google map when clicked.
+                          </p>
+                        </div>
+                        
+                        <div class="row justify-content-md-center mb-4">
+                          <a href="#">
+                            <img class="img-fluid" src="img/reviewsapp/favorite-buttons.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="row justify-content-md-center">
+                          <a href="#">
+                            <img class="img-fluid" src="img/reviewsapp/lazyloading.jpg" alt="">
+                          </a>
+                        </div>
 
-                          <!-- TODO: after finishing stage 3 add details about improving Performance -->
+                        <div class="row justify-content-md-center">
+                          <a href="#">
+                            <img class="img-fluid" src="img/reviewsapp/reviewsample.jpg" alt="">
+                          </a>
+                        </div>
 
       <div class="row my-5 mx-5 px-5 justify-content-md-center" style="text-align: center">
           <a target="_blank" class="btn btn-light btn-xl js-scroll-trigger mt-3 mb-5" style="color: #8ca4d4" href="https://github.com/annalenadavis/mws-restaurant-stage-1">See the Code</a>
